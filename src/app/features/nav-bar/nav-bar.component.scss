@@ -39,6 +39,8 @@
     font-family: "Inter", sans-serif;
     position: absolute;
     top: 0;
+    animation-name: open;
+    animation-duration: 1s;
 
     & > .menu-header {
       width: 90%;
@@ -185,3 +187,8 @@
     }
   }
 }
+
+@keyframes open {
+    from {left: -100vw;}
+    to {left: 0;}
+  }
