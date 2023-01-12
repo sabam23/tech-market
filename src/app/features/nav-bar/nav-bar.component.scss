@@ -7,6 +7,7 @@
   background-color: #ff5000;
   font-family: "Inter", sans-serif;
   position: relative;
+  border-bottom: #ed4e05 solid 2px;
 
   & > .content {
     height: 100%;
@@ -32,82 +33,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .mobile-menu {
-    width: 100vw;
-    height: 100vh;
-    background-color: white;
-    font-family: "Inter", sans-serif;
-    position: absolute;
-    top: 0;
-    animation-name: open;
-    animation-duration: 1s;
-
-    & > .menu-header {
-      width: 90%;
-      margin: auto;
-      height: 65px;
-      display: flex;
-      align-items: center;
-      margin-bottom: 100px;
-      & > span {
-        color: #17223b;
-        font-size: 30px;
-      }
-    }
-
-    & > .menu-tabs {
-      width: 90%;
-      border-radius: 2px;
-      border-bottom: 4px solid #f6f7f8;
-      border-top: 4px solid #f6f7f8;
-      margin: auto;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      border-bottom: 4px solid #f6f7f8;
-      align-items: center;
-      justify-content: center;
-      padding: 40px 0px 40px 0px;
-      margin-bottom: 60px;
-
-      & > .menu-tab {
-        width: 95%;
-        height: 40px;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        font-size: 18px;
-
-        & > span {
-          font-size: 20px;
-          color: #bec5cd;
-        }
-
-        &:hover span {
-          color: #ff5000;
-        }
-      }
-    }
-  }
-
-  .menu-footer {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-
-    & > a {
-      color: #17223b;
-      text-decoration: none;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
-
   .tabs {
     display: none;
   }
@@ -124,16 +49,12 @@
 }
 
 @media only screen and (min-width: 1000px) {
+  .content {
+    width: 80%;
+  }
+
   .menu-icon {
     display: none;
-  }
-
-  .mobile-menu {
-    display: none;
-  }
-
-  .content {
-    width: 80%;    
   }
 
   .tabs {
@@ -156,16 +77,12 @@
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1000px) {
-  .menu-icon {
-    display: none;
-  }
-
-  .mobile-menu {
-    display: none;
-  }
-
   .content {
     width: 98%;
+  }
+
+  .menu-icon {
+    display: none;
   }
 
   .tabs {
@@ -187,8 +104,3 @@
     }
   }
 }
-
-@keyframes open {
-    from {left: -100vw;}
-    to {left: 0;}
-  }

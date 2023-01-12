@@ -1,0 +1,40 @@
+<div
+  class="mobile-menu"
+  [@slide]="'open'"
+  *ngIf="menuOpen"
+>
+  <div class="menu-header">
+    <span class="material-symbols-outlined menu-icon" (click)="closeMenu()">
+      close
+    </span>
+  </div>
+
+  <div class="menu-tabs">
+    <div class="menu-tab">
+      Mobiles
+      <span class="material-symbols-outlined"> arrow_forward_ios </span>
+    </div>
+    <div class="menu-tab">
+      Laptops
+      <span class="material-symbols-outlined"> arrow_forward_ios </span>
+    </div>
+    <div class="menu-tab">
+      TV | Monitors
+      <span class="material-symbols-outlined"> arrow_forward_ios </span>
+    </div>
+    <div class="menu-tab">
+      Accessories
+      <span class="material-symbols-outlined"> arrow_forward_ios </span>
+    </div>
+    <div class="menu-tab">
+      Audio Systems
+      <span class="material-symbols-outlined"> arrow_forward_ios </span>
+    </div>
+  </div>
+
+  <div class="menu-footer">
+    <a href="#">Online installment</a>
+    <a href="#">Branches</a>
+    <a href="#">Schedule</a>
+  </div>
+</div>

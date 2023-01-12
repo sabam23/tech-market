@@ -7,7 +7,7 @@
       <div class="tab">Accessories</div>
       <div class="tab">Audio Systems</div>
     </div>
-    <span class="material-symbols-outlined menu-icon" (click)="toggleMenu()">
+    <span class="material-symbols-outlined menu-icon" (click)="openMenu()">
       menu
     </span>
 
@@ -18,39 +18,4 @@
   </div>
 </nav>
 
-<div class="mobile-menu" *ngIf="isMenuOpen">
-  <div class="menu-header">
-    <span class="material-symbols-outlined menu-icon" (click)="toggleMenu()">
-      close
-    </span>
-  </div>
-
-  <div class="menu-tabs">
-    <div class="menu-tab">
-      Mobiles
-      <span class="material-symbols-outlined"> arrow_forward_ios </span>
-    </div>
-    <div class="menu-tab">
-        Laptops
-        <span class="material-symbols-outlined"> arrow_forward_ios </span>
-    </div>
-    <div class="menu-tab">
-        TV | Monitors
-        <span class="material-symbols-outlined"> arrow_forward_ios </span>
-    </div>
-    <div class="menu-tab">
-        Accessories
-        <span class="material-symbols-outlined"> arrow_forward_ios </span>
-    </div>
-    <div class="menu-tab">
-        Audio Systems
-        <span class="material-symbols-outlined"> arrow_forward_ios </span>
-    </div>
-  </div>
-
-  <div class="menu-footer">
-    <a href="#">Online installment</a>
-    <a href="#">Branches</a>
-    <a href="#">Schedule</a>
-  </div>
-</div>
+<app-mobile-menu [menuOpen]="menuOpen" (close)="menuOpen = $event"></app-mobile-menu>
