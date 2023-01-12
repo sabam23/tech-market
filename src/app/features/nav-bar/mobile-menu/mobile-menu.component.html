@@ -4,9 +4,13 @@
   *ngIf="menuOpen"
 >
   <div class="menu-header">
-    <span class="material-symbols-outlined menu-icon" (click)="closeMenu()">
+    <span class="material-symbols-outlined" id="menu-icon" (click)="closeMenu()">
       close
     </span>
+  </div>
+
+  <div class="logo">
+    <img src="../../../assets/image/logo.png" alt="logo">
   </div>
 
   <div class="menu-tabs">

@@ -18,13 +18,25 @@
     align-items: center;
   }
 
+  & .tab {
+    color: white;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      color: #17223b;
+    }
+  }
+
   & .cart {
     display: flex;
     align-items: center;
     column-gap: 10px;
     color: white;
     cursor: pointer;
-    padding: 20px;
 
     &:hover span {
       color: #17223b;
@@ -39,6 +51,9 @@
 
   .content {
     width: 90%;
+    & > .logo {
+      display: none;
+    }
   }
 
   .menu-icon {
@@ -51,6 +66,12 @@
 @media only screen and (min-width: 1000px) {
   .content {
     width: 80%;
+
+    & > .logo {
+      & > img {
+        height: 55px;
+      }
+    }
   }
 
   .menu-icon {
@@ -62,44 +83,33 @@
     height: 100%;
     align-items: center;
     display: flex;
-    column-gap: 15px;
-
-    & > .tab {
-      color: white;
-      cursor: pointer;
-      padding: 20px;
-
-      &:hover {
-        color: #17223b;
-      }
-    }
+    column-gap: 45px;
   }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1000px) {
   .content {
     width: 98%;
-  }
 
-  .menu-icon {
-    display: none;
-  }
+    & > .logo {
+      & > img {
+        height: 40px;
+      }
+    }
 
-  .tabs {
-    width: fit-content;
-    height: 100%;
-    align-items: center;
-    display: flex;
-    column-gap: 10px;
+    .menu-icon {
+      display: none;
+    }
 
-    & > .tab {
-      color: white;
-      cursor: pointer;
-      padding: 10px;
-      font-size: 15px;
+    .tabs {
+      width: fit-content;
+      height: 100%;
+      align-items: center;
+      display: flex;
+      column-gap: 15px;
 
-      &:hover {
-        color: #17223b;
+      & > .tab {
+        font-size: 14px;
       }
     }
   }
