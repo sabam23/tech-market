@@ -6,7 +6,8 @@
             "model_name": "Iphone 14 Pro",
             "category:": "mobile",
             "price": "900",
-            "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14-pro.jpg"
+            "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14-pro.jpg",
+            "views": 0
         },
         {
             "id": 2,
@@ -14,7 +15,8 @@
             "model_name": "Legion 5",
             "category:": "laptop",
             "price": "1000",
-            "device_photo": "https://p2-ofp.static.pub/fes/cms/2022/03/30/5bxxp7isu9hgiewncqzuy8fa5uc60q094633.png"
+            "device_photo": "https://p2-ofp.static.pub/fes/cms/2022/03/30/5bxxp7isu9hgiewncqzuy8fa5uc60q094633.png",
+            "views": 0
         },
         {
             "id": 3,
@@ -22,7 +24,8 @@
             "model_name": "Galaxy S 22 Ultra",
             "category:": "mobile",
             "price": "850",
-            "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-ultra-5g.jpg"
+            "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-ultra-5g.jpg",
+            "views": 0
         },
         {
             "id": 4,
@@ -30,7 +33,8 @@
             "model_name": "Galaxy S 21 Ultra",
             "category:": "mobile",
             "price": "650",
-            "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s21-ultra-5g-.jpg"
+            "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s21-ultra-5g-.jpg",
+            "views": 0
         },
         {
             "id": 5,
@@ -38,7 +42,8 @@
             "model_name": "Aspire 3",
             "category:": "laptop",
             "price": "950",
-            "device_photo": "https://images.acer.com/is/image/acer/acer-aspire-3-a315-24p-non-fingerprint-non-backlit-wallpaper-silver-01?:Visual-Filter-XL$"
+            "device_photo": "https://images.acer.com/is/image/acer/acer-aspire-3-a315-24p-non-fingerprint-non-backlit-wallpaper-silver-01?:Visual-Filter-XL$",
+            "views": 0
         },
         {
             "id": 6,
@@ -46,7 +51,8 @@
             "model_name": "13 Pro",
             "category:": "mobile",
             "price": "550",
-            "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-13-pro-black.jpg"
+            "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-13-pro-black.jpg",
+            "views": 0
         },
         {
             "id": 7,
@@ -54,7 +60,8 @@
             "model_name": "Mate 50 Pro",
             "category:": "mobile",
             "price": "620",
-            "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-50-pro.jpg"
+            "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-50-pro.jpg",
+            "views": 0
         },
         {
             "id": 8,
@@ -62,7 +69,8 @@
             "model_name": "Redmi Note 12 Pro",
             "category:": "mobile",
             "price": "420",
-            "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-12-pro.jpg"
+            "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-12-pro.jpg",
+            "views": 0
         },
         {
             "id": 9,
@@ -70,7 +78,8 @@
             "model_name": "Predator Triton 300",
             "category:": "mobile",
             "price": "1120",
-            "device_photo": "https://images.acer.com/is/image/acer/Triton-300-PT315-53-Backliton-Black-01a?$Series-Component-XL$"
+            "device_photo": "https://images.acer.com/is/image/acer/Triton-300-PT315-53-Backliton-Black-01a?$Series-Component-XL$",
+            "views": 0
         }
     ]
 }
