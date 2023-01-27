@@ -8,19 +8,25 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './features/nav-bar/nav-bar.component';
 import { DashboardComponent } from './features/dashboard/dashboard.component';
 import { MobileMenuComponent } from './features/nav-bar/mobile-menu/mobile-menu.component';
+import { FilterPipe } from './features/dashboard/pipes/filter.pipe';
+import { FormsModule } from '@angular/forms';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     DashboardComponent,
-    MobileMenuComponent
+    MobileMenuComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

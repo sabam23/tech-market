@@ -7,8 +7,13 @@ import { DevicesService } from './services/devices.service';
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss']
 })
+
 export class DashboardComponent implements OnInit {
+  searchText = '';
   devicesData!: Device[];
+  selected = '';
+  end = 8
+  devicesDataLength = 0;
 
   constructor(private deviceService: DevicesService) {}
 
@@ -17,8 +22,12 @@ export class DashboardComponent implements OnInit {
   }
 
   getDevices(): void {
-    this.deviceService.getAllDevices().subscribe(response => {
+    let sort = this.selected.split('_')[0];
+    let order = this.selected.split('_')[1];
+    this.deviceService.getAllDevices(sort, order, this.end).subscribe(response => {
       this.devicesData = response;
+      this.devicesDataLength = this.devicesData.length;
+      console.log(response)
     })
   }
 }

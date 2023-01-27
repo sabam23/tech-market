@@ -2,8 +2,8 @@ export interface Device {
     id: number,
     manufacturer: string;
     model_name: string;
-    category: string;
-    price: string;
+    price: number;
     device_photo: string;
-    views: number
+    views: number;
+    category: string;
 }
