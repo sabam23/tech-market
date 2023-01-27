@@ -13,6 +13,6 @@ export class DevicesService {
   baseUrl: string = 'http://localhost:3000/devices';
 
   getAllDevices(sort: string, order: string, end: number): Observable<Device[]> {
-    return this.http.get<Device[]>(`${this.baseUrl}?_sort=${sort}&_order=${order}?_start=1&_end=${end}`);
+    return this.http.get<Device[]>(`${this.baseUrl}?_sort=${sort}&_order=${order}`);
   }
 }

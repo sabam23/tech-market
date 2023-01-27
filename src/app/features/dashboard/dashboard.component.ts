@@ -13,8 +13,6 @@ export class DashboardComponent implements OnInit {
   devicesData!: Device[];
   selected = '';
   end = 8
-  devicesDataLength = 0;
-
   constructor(private deviceService: DevicesService) {}
 
   ngOnInit(): void {
@@ -26,8 +24,6 @@ export class DashboardComponent implements OnInit {
     let order = this.selected.split('_')[1];
     this.deviceService.getAllDevices(sort, order, this.end).subscribe(response => {
       this.devicesData = response;
-      this.devicesDataLength = this.devicesData.length;
-      console.log(response)
     })
   }
 }
