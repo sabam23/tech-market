@@ -30,7 +30,6 @@
       background-color: white;
       border-radius: 12px;
       position: relative;
-      width: 200px;
       height: 275px;
 
       & .cart {
@@ -129,7 +128,7 @@
     align-items: center;
 
     & .device {
-      width: 170px;
+      width: 80%;
       height: 250px;
     }
   }
@@ -148,6 +147,11 @@
 @media only screen and (min-width: 1000px) {
   .devices {
     justify-content: space-evenly;
+
+    & .device {
+      width: 200px;
+      height: 250px;
+    }
   }
 
   .search_bar {
@@ -158,6 +162,11 @@
 @media only screen and (min-width: 600px) and (max-width: 1000px) {
   .devices {
     justify-content: space-around;
+
+    & .device {
+      width: 200px;
+      height: 250px;
+    }
   }
 
   .search_bar {
