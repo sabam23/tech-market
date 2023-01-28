@@ -12,7 +12,7 @@
     </mat-form-field>
   </div>
   <div class="devices">
-    <div class="device" *ngFor="let device of devicesData | appFilter: searchText"
+    <div class="device" *ngFor="let device of devicesData$ | appFilter: searchText | async"
          (click)="deviceService.deviceId = device.id;expand(device.id)"
          [routerLink]="['/device', device.id]"
     >
