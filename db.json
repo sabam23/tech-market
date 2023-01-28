@@ -7,7 +7,7 @@
       "category": "mobile",
       "price": 900,
       "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14-pro.jpg",
-      "views": 28
+      "views": 31
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "category": "laptop",
       "price": 1000,
       "device_photo": "https://p2-ofp.static.pub/fes/cms/2022/03/30/5bxxp7isu9hgiewncqzuy8fa5uc60q094633.png",
-      "views": 13
+      "views": 15
     },
     {
       "id": 3,
@@ -79,7 +79,7 @@
       "category": "mobile",
       "price": 1120,
       "device_photo": "https://images.acer.com/is/image/acer/Triton-300-PT315-53-Backliton-Black-01a?$Series-Component-XL$",
-      "views": 5
+      "views": 6
     }
   ]
 }

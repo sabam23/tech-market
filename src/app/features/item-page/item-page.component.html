@@ -1,12 +1,12 @@
 <div class="container">
   <div class="device">
     <div class="device-image">
-      <img src="{{ device.device_photo }}" alt="device img">
+      <img *ngIf="device" src="{{ device.device_photo }}" alt="device img" >
     </div>
     <div class="device-info">
      <div class="device-content">
         <div class="device-name">
-          {{ device.manufacturer + " " + device.model_name }}
+          {{ device?.manufacturer + " " + device?.model_name }}
         </div>
      </div>
     </div>
