@@ -7,7 +7,7 @@
       "category": "mobile",
       "price": 900,
       "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14-pro.jpg",
-      "views": 23
+      "views": 27
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "category": "laptop",
       "price": 1000,
       "device_photo": "https://p2-ofp.static.pub/fes/cms/2022/03/30/5bxxp7isu9hgiewncqzuy8fa5uc60q094633.png",
-      "views": 11
+      "views": 13
     },
     {
       "id": 3,
@@ -25,7 +25,7 @@
       "category": "mobile",
       "price": 850,
       "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-ultra-5g.jpg",
-      "views": 9
+      "views": 11
     },
     {
       "id": 4,
@@ -34,7 +34,7 @@
       "category": "mobile",
       "price": 650,
       "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s21-ultra-5g-.jpg",
-      "views": 4
+      "views": 5
     },
     {
       "id": 5,
@@ -52,7 +52,7 @@
       "category": "mobile",
       "price": 550,
       "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-13-pro-black.jpg",
-      "views": 2
+      "views": 4
     },
     {
       "id": 7,
@@ -79,7 +79,7 @@
       "category": "mobile",
       "price": 1120,
       "device_photo": "https://images.acer.com/is/image/acer/Triton-300-PT315-53-Backliton-Black-01a?$Series-Component-XL$",
-      "views": 3
+      "views": 5
     }
   ]
 }
