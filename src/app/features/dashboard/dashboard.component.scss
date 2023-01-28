@@ -136,9 +136,10 @@
 
   .filter {
     gap: 10px;
+    flex-direction: column;
 
     & > .search_bar {
-      width: 170px;
+      width: 90%;
     }
   }
 
@@ -167,10 +168,10 @@
 .filter {
   width: 100%;
   max-width: 1200px;
-  height: 100px;
+  height: 150px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 
   & > .search_bar {
     font-family: "Inter", sans-serif;
