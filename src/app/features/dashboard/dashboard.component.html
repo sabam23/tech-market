@@ -6,13 +6,16 @@
       <mat-select [(value)]="selected">
         <mat-option value="price_asc" (click)="getDevices()">Price asc</mat-option>
         <mat-option value="price_desc" (click)="getDevices()">Price desc</mat-option>
-        <mat-option value="views" (click)="getDevices()">Popularity</mat-option>
+        <mat-option value="views_desc" (click)="getDevices()">Popularity</mat-option>
         <mat-option value="manufacturer" (click)="getDevices()">A-Z</mat-option>
       </mat-select>
     </mat-form-field>
   </div>
   <div class="devices">
-    <div class="device" *ngFor="let device of devicesData | appFilter: searchText">
+    <div class="device" *ngFor="let device of devicesData | appFilter: searchText"
+         (click)="deviceService.deviceId = device.id;expand(device.id)"
+         [routerLink]="['/device', device.id]"
+    >
       <div class="device-views">
         <span class="material-symbols-outlined"> visibility </span>
         {{ device.views }}

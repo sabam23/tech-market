@@ -11,6 +11,7 @@ import { MobileMenuComponent } from './features/nav-bar/mobile-menu/mobile-menu.
 import { FilterPipe } from './features/dashboard/pipes/filter.pipe';
 import { FormsModule } from '@angular/forms';
 import {MatSelectModule} from '@angular/material/select';
+import { ItemPageComponent } from './features/item-page/item-page.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {MatSelectModule} from '@angular/material/select';
     NavBarComponent,
     DashboardComponent,
     MobileMenuComponent,
-    FilterPipe
+    FilterPipe,
+    ItemPageComponent
   ],
   imports: [
     BrowserModule,
