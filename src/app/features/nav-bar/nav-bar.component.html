@@ -1,7 +1,7 @@
 <nav class="nav-bar">
   <div class="content">
     <div class="logo" [routerLink]="['/']">
-      <img src="../../../assets/image/logo.png" alt="logo">
+      <img src="../../../assets/image/logo.png" alt="logo" />
     </div>
     <div class="tabs">
       <div class="tab">Mobiles</div>
@@ -21,4 +21,7 @@
   </div>
 </nav>
 
-<app-mobile-menu [menuOpen]="menuOpen" (close)="menuOpen = $event"></app-mobile-menu>
+<app-mobile-menu
+  [menuOpen]="menuOpen"
+  (close)="menuOpen = $event"
+></app-mobile-menu>

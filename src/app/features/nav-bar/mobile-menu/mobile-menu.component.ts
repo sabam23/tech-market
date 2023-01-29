@@ -12,7 +12,6 @@ import {
   Input,
   Output,
 } from '@angular/core';
-import { bufferToggle } from 'rxjs';
 
 @Component({
   selector: 'app-mobile-menu',

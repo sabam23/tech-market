@@ -17,16 +17,13 @@ export class ItemPageComponent implements OnInit, OnDestroy {
     private route: ActivatedRoute
   ) {}
 
-
   public device!: Device | undefined;
 
   ngOnInit(): void {
     this.getDevice();
   }
 
-  ngOnDestroy(): void {
-
-  }
+  ngOnDestroy(): void {}
 
   getDevice(): void {
     this.deviceService
