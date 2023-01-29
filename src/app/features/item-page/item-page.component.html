@@ -8,7 +8,39 @@
         <div class="device-name">
           {{ device?.manufacturer + " " + device?.model_name }}
         </div>
+        <div class="device-category">
+          Category: {{ device?.category?.toUpperCase() }}
+        </div>
+       <span>Size: {{ size }} Gb</span>
+        <div class="device-specs">
+          <div class="specs" (click)="size = '128';" [style.border]="size == '128' ? 'solid 2px #ed4e05' : ''">
+            128 Gb
+          </div>
+          <div class="specs" (click)="size = '256';" [style.border]="size == '256' ? 'solid 2px #ed4e05' : ''">
+            256 Gb
+          </div>
+          <div class="specs" (click)="size = '512';" [style.border]="size == '512' ? 'solid 2px #ed4e05' : ''" *ngIf="device?.category == 'laptop'">
+            512 Gb
+          </div>
+          <div class="specs" (click)="size = '1024';" [style.border]="size == '1024' ? 'solid 2px #ed4e05' : ''" *ngIf="device?.category == 'laptop'">
+            1024 Gb
+          </div>
+        </div>
+       <div class="device-price">
+         Price: <span>{{ device?.price | currency }}</span>
+       </div>
+       <div class="device-sell-tab">
+         <button class="buy-btn">Buy</button>
+         <div class="cart">
+            <span class="material-symbols-outlined">
+              shopping_cart_checkout
+            </span>
+         </div>
+         <button class="inst-btn">Installment</button>
+       </div>
      </div>
     </div>
+
+
   </div>
 </div>

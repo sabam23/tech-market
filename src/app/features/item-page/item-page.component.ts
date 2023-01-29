@@ -10,11 +10,13 @@ import { BehaviorSubject, Observable, tap } from 'rxjs';
   styleUrls: ['./item-page.component.scss'],
 })
 export class ItemPageComponent implements OnInit, OnDestroy {
+  size = '128';
+
   constructor(
     private deviceService: DevicesService,
     private route: ActivatedRoute
   ) {}
-  
+
 
   public device!: Device | undefined;
 
@@ -23,7 +25,7 @@ export class ItemPageComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    
+
   }
 
   getDevice(): void {

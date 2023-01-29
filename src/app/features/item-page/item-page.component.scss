@@ -1,3 +1,9 @@
+:host {
+  height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -9,7 +15,7 @@
     display: flex;
     flex-wrap: wrap;
     background: white;
-    border-radius: 10px;
+    border-radius: 15px;
     border: solid 1px #eff0f2;
     font-family: "Inter", sans-serif;
 
@@ -22,7 +28,7 @@
 
       & > img {
           height: 320px;
-          padding: 60px;
+          padding: 100px;
       }
     }
 
@@ -33,7 +39,12 @@
     &-content {
       display: flex;
       flex-direction: column;
-      padding: 60px;
+      padding: 100px;
+      gap: 20px;
+
+      & > span {
+        color: #242424;
+      }
     }
 
     &-name {
@@ -41,6 +52,92 @@
       font-weight: 700;
       padding-bottom: 25px;
       border-bottom: solid 1px #eff0f2;
+    }
+
+    &-category {
+      font-size: 18px;
+    }
+
+    &-specs {
+      display: flex;
+      gap: 10px;
+    }
+
+    & .specs {
+      cursor: pointer;
+      width: 65px;
+      height: 30px;
+      display: flex;
+      padding: 7px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+
+      &:hover {
+        background: #ededed;
+      }
+    }
+
+    &-price {
+      font-size: 18px;
+
+      & > span {
+        font-size: 20px;
+        color: #ed4e05;
+      }
+    }
+
+    &-sell-tab {
+      height: 60px;
+      display: flex;
+      gap: 25px;
+      align-items: center;
+      justify-content: flex-start;
+
+      & > .buy-btn {
+        cursor: pointer;
+        width: 140px;
+        height: 50px;
+        border: none;
+        border-radius: 7px;
+        color: white;
+        background: #ed4e05;
+        font-size: 18px;
+
+        &:hover {
+          background: #ff5000;
+        }
+      }
+
+      & > .inst-btn {
+        width: 140px;
+        height: 50px;
+        border: none;
+        border-radius: 7px;
+        background: #093251;
+        font-size: 18px;
+        color: white;
+        cursor: pointer;
+
+        &:hover {
+          background: #114368;
+        }
+      }
+
+      & > .cart {
+        display: flex;
+        width: 65px;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6px;
+        border: #ededed 2px solid;
+        cursor: pointer;
+
+        &:hover {
+          background: #ededed;
+        }
+      }
     }
   }
 
