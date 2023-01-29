@@ -1,44 +1,25 @@
-:host {
-  height: calc(100vh - 200px);
-  display: flex;
-  align-items: center;
-}
-
 .container {
-  width: 100%;
   max-width: 1200px;
   margin: auto;
 
   .device {
-    width: 100%;
-    max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
     background: white;
     border-radius: 15px;
     border: solid 1px #eff0f2;
     font-family: "Inter", sans-serif;
+    padding: 100px 40px 100px 40px;
 
     &-image {
-      width: 40%;
       display: flex;
       align-items: center;
       justify-content: center;
-
-      & > img {
-        height: 320px;
-        padding: 100px;
-      }
-    }
-
-    &-info {
-      width: 60%;
     }
 
     &-content {
       display: flex;
       flex-direction: column;
-      padding: 100px;
       gap: 20px;
 
       & > span {
@@ -89,7 +70,6 @@
     &-sell-tab {
       height: 60px;
       display: flex;
-      gap: 25px;
       align-items: center;
       justify-content: flex-start;
 
@@ -137,6 +117,80 @@
           background: #ededed;
         }
       }
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .container {
+    width: 95%;
+  }
+
+  .device {
+    &-image {
+      width: 40%;
+    }
+
+    &-info {
+      width: 60%;
+    }
+
+    &-sell-tab {
+      gap: 25px;
+    }
+  }
+
+  .img {
+    height: 320px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  .container {
+    width: 98%;
+  }
+
+  .device {
+    gap: 10%;
+    &-image {
+      width: 30%;
+    }
+
+    &-info {
+      width: 55%;
+    }
+
+    &-sell-tab {
+      gap: 25px;
+    }
+  }
+
+  .img {
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+
+  .img {
+    height: 200px;
+  }
+
+  .device {
+    gap: 50px;
+    &-image {
+      width: 100%;
+    }
+
+    &-info {
+      width: 100%;
+    }
+
+    &-sell-tab {
+      gap: 10px;
     }
   }
 }
