@@ -12,9 +12,9 @@ export class DevicesService {
   baseUrl: string = 'http://localhost:3000/devices';
   deviceId!: number;
 
-  getAllDevices(sort: string, order: string = 'asc'): Observable<Device[]> {
+  getAllDevices(): Observable<Device[]> {
     return this.http.get<Device[]>(
-      `${this.baseUrl}?_sort=${sort}&_order=${order}`
+      `${this.baseUrl}`
     );
   }
 
@@ -23,7 +23,7 @@ export class DevicesService {
   }
 
   getCategoryList(category: string): Observable<Device[]> {
-    return this.http.get<Device[]>(`${this.baseUrl}`)
+    return this.http.get<Device[]>(`${this.baseUrl}?category=${category}`)
   }
 
   updateDevice(id: number, payload: {}): Observable<Device> {

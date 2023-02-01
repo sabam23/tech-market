@@ -14,11 +14,11 @@
   </div>
 
   <div class="menu-tabs">
-    <div class="menu-tab">
+    <div class="menu-tab" [routerLink]="['mobiles']"  (click)="closeMenu()">
       Mobiles
       <span class="material-symbols-outlined"> arrow_forward_ios </span>
     </div>
-    <div class="menu-tab">
+    <div class="menu-tab" [routerLink]="['laptops']"  (click)="closeMenu()">
       Laptops
       <span class="material-symbols-outlined"> arrow_forward_ios </span>
     </div>

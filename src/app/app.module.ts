@@ -14,6 +14,7 @@ import {MatSelectModule} from '@angular/material/select';
 import { ItemPageComponent } from './features/item-page/item-page.component';
 import { MobilesPageComponent } from './features/dashboard/mobiles-page/mobiles-page.component';
 import { LaptopsPageComponent } from './features/dashboard/laptops-page/laptops-page.component';
+import { LayoutComponent } from './features/dashboard/layout/layout.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { LaptopsPageComponent } from './features/dashboard/laptops-page/laptops-
     FilterPipe,
     ItemPageComponent,
     MobilesPageComponent,
-    LaptopsPageComponent
+    LaptopsPageComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,

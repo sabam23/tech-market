@@ -8,11 +8,25 @@ const routes: Routes = [
     component: DashboardComponent
   },
   {
+    path: 'mobiles',
+    loadChildren: () =>
+      import(
+        './features/dashboard/mobiles-page/mobiles-page.module'
+      ).then((m) => m.MobilesPageModule),
+  },
+  {
+    path: 'laptops',
+    loadChildren: () =>
+      import(
+        './features/dashboard/laptops-page/laptops-page.module'
+      ).then((m) => m.LaptopsPageModule),
+  },
+  {
     path: 'device/:deviceId',
     loadChildren: () =>
       import(
         './features/item-page/item-page.module'
-      ).then((m) => m.ItemPageModule),
+      ).then((m) => m.ItemPageModule)
   },
 ];
 
