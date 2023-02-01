@@ -20,6 +20,8 @@
       gap: 30px;
       flex-wrap: wrap;
       align-items: center;
+      animation-name: open-devices;
+      animation-duration: 2s;
   
       & .device {
         cursor: pointer;
@@ -202,3 +204,8 @@
     }
   }
   
+
+@keyframes open-devices {
+  from {opacity: 0.45;}
+  to {opacity: 1;}
+}

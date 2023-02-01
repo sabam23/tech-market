@@ -10,6 +10,8 @@
     border: solid 1px #eff0f2;
     font-family: "Inter", sans-serif;
     padding: 100px 40px 100px 40px;
+    animation-name: open-device;
+    animation-duration: 1s;
 
     &-image {
       display: flex;
@@ -193,4 +195,9 @@
       gap: 10px;
     }
   }
+}
+
+@keyframes open-device {
+  from {opacity: 0.5;}
+  to {opacity: 1;}
 }
