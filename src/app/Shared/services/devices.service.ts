@@ -22,10 +22,6 @@ export class DevicesService {
     return this.http.get<Device>(`${this.baseUrl}/${id}`);
   }
 
-  getCategoryList(category: string): Observable<Device[]> {
-    return this.http.get<Device[]>(`${this.baseUrl}?category=${category}`)
-  }
-
   updateDevice(id: number, payload: {}): Observable<Device> {
     return this.http.patch<Device>(`${this.baseUrl}/${id}`, payload);
   }
