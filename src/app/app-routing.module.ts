@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './features/dashboard/dashboard.component';
-import {ItemPageComponent} from "./features/item-page/item-page.component";
 
 const routes: Routes = [
   {
@@ -10,7 +9,10 @@ const routes: Routes = [
   },
   {
     path: 'device/:deviceId',
-    component: ItemPageComponent
+    loadChildren: () =>
+      import(
+        './features/item-page/item-page.module'
+      ).then((m) => m.ItemPageModule),
   },
 ];
 

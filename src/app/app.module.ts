@@ -12,6 +12,8 @@ import { FilterPipe } from './features/dashboard/pipes/filter.pipe';
 import { FormsModule } from '@angular/forms';
 import {MatSelectModule} from '@angular/material/select';
 import { ItemPageComponent } from './features/item-page/item-page.component';
+import { MobilesPageComponent } from './features/dashboard/mobiles-page/mobiles-page.component';
+import { LaptopsPageComponent } from './features/dashboard/laptops-page/laptops-page.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ItemPageComponent } from './features/item-page/item-page.component';
     DashboardComponent,
     MobileMenuComponent,
     FilterPipe,
-    ItemPageComponent
+    ItemPageComponent,
+    MobilesPageComponent,
+    LaptopsPageComponent
   ],
   imports: [
     BrowserModule,
