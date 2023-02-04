@@ -6,7 +6,7 @@ import { Device } from '../interfaces/device.interface';
 @Component({
   selector: 'app-layout',
   templateUrl: './layout.component.html',
-  styleUrls: ['./layout.component.scss']
+  styleUrls: ['./layout.component.scss'],
 })
 export class LayoutComponent {
   @Input() devicesData$!: BehaviorSubject<Device[]>;
@@ -15,7 +15,7 @@ export class LayoutComponent {
 
   searchText = '';
   selected = '';
-  
+
   constructor(public deviceService: DevicesService) {}
 
   ngOnInit(): void {
@@ -28,26 +28,30 @@ export class LayoutComponent {
   }
 
   sort(): void {
-    if (this.selected === "price_asc") {
-      this.devicesData$.pipe(
-        map ( res => res.sort((a,b) =>  a.price - b.price))
-      ).subscribe()
-    } else if (this.selected === "price_desc") {
-      this.devicesData$.pipe(
-        map ( res => res.sort((a,b) => b.price - a.price))
-      ).subscribe()
-    } else if (this.selected === "views_desc") {
-      this.devicesData$.pipe(
-        map ( res => res.sort((a,b) => b.views - a.views))
-      ).subscribe()
-    } else if (this.selected === "manufacturer") {
-      this.devicesData$.pipe(
-        map ( res => res.sort((a, b) => {
-          if (a.manufacturer > b.manufacturer)  return 1;
-          if (b.manufacturer > a.manufacturer) return -1;
-          return 0;
-        }))
-      ).subscribe()
+    if (this.selected === 'price_asc') {
+      this.devicesData$
+        .pipe(map((res) => res.sort((a, b) => a.price - b.price)))
+        .subscribe();
+    } else if (this.selected === 'price_desc') {
+      this.devicesData$
+        .pipe(map((res) => res.sort((a, b) => b.price - a.price)))
+        .subscribe();
+    } else if (this.selected === 'views_desc') {
+      this.devicesData$
+        .pipe(map((res) => res.sort((a, b) => b.views - a.views)))
+        .subscribe();
+    } else if (this.selected === 'manufacturer') {
+      this.devicesData$
+        .pipe(
+          map((res) =>
+            res.sort((a, b) => {
+              if (a.manufacturer > b.manufacturer) return 1;
+              if (b.manufacturer > a.manufacturer) return -1;
+              return 0;
+            })
+          )
+        )
+        .subscribe();
     }
   }
 

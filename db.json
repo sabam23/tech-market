@@ -4,43 +4,43 @@
       "id": 1,
       "manufacturer": "Apple",
       "model_name": "Iphone 14 Pro",
-      "category": "mobile",
+      "category": "mobiles",
       "price": 900,
       "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14-pro.jpg",
-      "views": 71
+      "views": 103
     },
     {
       "id": 2,
       "manufacturer": "Lenovo",
       "model_name": "Legion 5",
-      "category": "laptop",
+      "category": "laptops",
       "price": 1000,
       "device_photo": "https://p2-ofp.static.pub/fes/cms/2022/03/30/5bxxp7isu9hgiewncqzuy8fa5uc60q094633.png",
-      "views": 46
+      "views": 66
     },
     {
       "id": 3,
       "manufacturer": "Samsung",
       "model_name": "Galaxy S 22 Ultra",
-      "category": "mobile",
+      "category": "mobiles",
       "price": 850,
       "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-ultra-5g.jpg",
-      "views": 26
+      "views": 29
     },
     {
       "id": 4,
       "manufacturer": "Samsung",
       "model_name": "Galaxy S 21 Ultra",
-      "category": "mobile",
+      "category": "mobiles",
       "price": 650,
       "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s21-ultra-5g-.jpg",
-      "views": 19
+      "views": 21
     },
     {
       "id": 5,
       "manufacturer": "Acer",
       "model_name": "Aspire 3",
-      "category": "laptop",
+      "category": "laptops",
       "price": 950,
       "device_photo": "https://images.acer.com/is/image/acer/acer-aspire-3-a315-24p-non-fingerprint-non-backlit-wallpaper-silver-01?:Visual-Filter-XL$",
       "views": 15
@@ -49,16 +49,16 @@
       "id": 6,
       "manufacturer": "Xiaomi",
       "model_name": "13 Pro",
-      "category": "mobile",
+      "category": "mobiles",
       "price": 550,
       "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-13-pro-black.jpg",
-      "views": 8
+      "views": 12
     },
     {
       "id": 7,
       "manufacturer": "Huawei",
       "model_name": "Mate 50 Pro",
-      "category": "mobile",
+      "category": "mobiles",
       "price": 620,
       "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-50-pro.jpg",
       "views": 9
@@ -67,7 +67,7 @@
       "id": 8,
       "manufacturer": "Xiaomi",
       "model_name": "Redmi Note 12 Pro",
-      "category": "mobile",
+      "category": "mobiles",
       "price": 420,
       "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-12-pro.jpg",
       "views": 7
@@ -76,7 +76,7 @@
       "id": 9,
       "manufacturer": "Acer",
       "model_name": "Predator Triton 300",
-      "category": "laptop",
+      "category": "laptops",
       "price": 1120,
       "device_photo": "https://images.acer.com/is/image/acer/Triton-300-PT315-53-Backliton-Black-01a?$Series-Component-XL$",
       "views": 11

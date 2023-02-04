@@ -27,7 +27,7 @@ export class MobilesPageComponent implements OnInit, OnDestroy {
 
   getDevices(): void {
     this.deviceService.getAllDevices().pipe(
-      map( res => res.filter( r => r.category === "mobile")),
+      map( res => res.filter( r => r.category === "mobiles")),
       tap(response => this.devicesData$.next(response))
     ).subscribe()
   }
