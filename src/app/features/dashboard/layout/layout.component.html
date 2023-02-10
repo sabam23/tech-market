@@ -21,7 +21,6 @@
       class="device"
       *ngFor="let device of devicesData$ | appFilter : searchText | async"
       (click)="deviceService.deviceId = device.id; expand(device.id)"
-      [routerLink]="['/device', device.id]"
     >
       <div class="device-views">
         <span class="material-symbols-outlined"> visibility </span>
@@ -36,7 +35,12 @@
         {{ device.manufacturer + " " + device.model_name }}
       </h1>
       <p class="device-price">{{ device.price | currency }}</p>
-      <p class="device-category" [routerLink]="'/' + device.category">{{ device.category }}</p>
+      <p
+        class="device-category"
+        (click)="navigateToCategory = true; category(device.category)"
+      >
+        #{{ device.category }}
+      </p>
       <div class="cart" title="add to cart">
         <span class="material-symbols-outlined"> add_shopping_cart </span>
       </div>

@@ -7,7 +7,7 @@
       "category": "mobiles",
       "price": 900,
       "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14-pro.jpg",
-      "views": 103
+      "views": 113
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "category": "laptops",
       "price": 1000,
       "device_photo": "https://p2-ofp.static.pub/fes/cms/2022/03/30/5bxxp7isu9hgiewncqzuy8fa5uc60q094633.png",
-      "views": 66
+      "views": 81
     },
     {
       "id": 3,
@@ -25,7 +25,7 @@
       "category": "mobiles",
       "price": 850,
       "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-ultra-5g.jpg",
-      "views": 29
+      "views": 41
     },
     {
       "id": 4,
@@ -34,7 +34,7 @@
       "category": "mobiles",
       "price": 650,
       "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s21-ultra-5g-.jpg",
-      "views": 21
+      "views": 22
     },
     {
       "id": 5,
@@ -43,7 +43,7 @@
       "category": "laptops",
       "price": 950,
       "device_photo": "https://images.acer.com/is/image/acer/acer-aspire-3-a315-24p-non-fingerprint-non-backlit-wallpaper-silver-01?:Visual-Filter-XL$",
-      "views": 15
+      "views": 16
     },
     {
       "id": 6,
@@ -52,7 +52,7 @@
       "category": "mobiles",
       "price": 550,
       "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-13-pro-black.jpg",
-      "views": 12
+      "views": 13
     },
     {
       "id": 7,
@@ -79,7 +79,7 @@
       "category": "laptops",
       "price": 1120,
       "device_photo": "https://images.acer.com/is/image/acer/Triton-300-PT315-53-Backliton-Black-01a?$Series-Component-XL$",
-      "views": 11
+      "views": 13
     }
   ]
 }

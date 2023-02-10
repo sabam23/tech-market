@@ -1,4 +1,12 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Input,
+  OnDestroy,
+  OnInit,
+  Output,
+} from '@angular/core';
+import { Router } from '@angular/router';
 import { BehaviorSubject, tap, map } from 'rxjs';
 import { DevicesService } from 'src/app/Shared/services/devices.service';
 import { Device } from '../interfaces/device.interface';
@@ -8,15 +16,16 @@ import { Device } from '../interfaces/device.interface';
   templateUrl: './layout.component.html',
   styleUrls: ['./layout.component.scss'],
 })
-export class LayoutComponent {
+export class LayoutComponent implements OnInit, OnDestroy {
   @Input() devicesData$!: BehaviorSubject<Device[]>;
   @Output() searchTextEvent: EventEmitter<string> = new EventEmitter();
   @Output() selectedEvent: EventEmitter<string> = new EventEmitter();
 
   searchText = '';
   selected = '';
+  navigateToCategory: boolean = false;
 
-  constructor(public deviceService: DevicesService) {}
+  constructor(public deviceService: DevicesService, public router: Router) {}
 
   ngOnInit(): void {
     this.searchTextEvent.emit(this.searchText);
@@ -55,16 +64,25 @@ export class LayoutComponent {
     }
   }
 
+  category(category: string): void {
+    if (this.navigateToCategory) {
+      this.router.navigate(['/', category]);
+    }
+  }
+
   expand(id: number): void {
-    this.deviceService
-      .getDevice(id)
-      .pipe(
-        tap((data) => {
-          this.deviceService
-            .updateDevice(id, { views: data.views + 1 })
-            .subscribe();
-        })
-      )
-      .subscribe();
+    if (!this.navigateToCategory) {
+      this.router.navigate(['/device', id]);
+      this.deviceService
+        .getDevice(id)
+        .pipe(
+          tap((data) => {
+            this.deviceService
+              .updateDevice(id, { views: data.views + 1 })
+              .subscribe();
+          })
+        )
+        .subscribe();
+    }
   }
 }
