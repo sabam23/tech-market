@@ -6,7 +6,7 @@ import {
   OnInit,
   Output,
 } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { BehaviorSubject, tap, map } from 'rxjs';
 import { DevicesService } from 'src/app/Shared/services/devices.service';
 import { Device } from '../interfaces/device.interface';
@@ -25,7 +25,7 @@ export class LayoutComponent implements OnInit, OnDestroy {
   selected = '';
   navigateToCategory: boolean = false;
 
-  constructor(public deviceService: DevicesService, public router: Router) {}
+  constructor(public deviceService: DevicesService, public router: Router, private route: ActivatedRoute) {}
 
   ngOnInit(): void {
     this.searchTextEvent.emit(this.searchText);
@@ -64,7 +64,7 @@ export class LayoutComponent implements OnInit, OnDestroy {
     }
   }
 
-  category(category: string): void {
+  category(category: string, id: number): void {
     if (this.navigateToCategory) {
       this.router.navigate(['/', category]);
     }
@@ -79,10 +79,10 @@ export class LayoutComponent implements OnInit, OnDestroy {
           tap((data) => {
             this.deviceService
               .updateDevice(id, { views: data.views + 1 })
-              .subscribe();
+              .subscribe();             
           })
         )
         .subscribe();
-    }
+    } 
   }
 }

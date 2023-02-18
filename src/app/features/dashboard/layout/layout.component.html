@@ -37,7 +37,7 @@
       <p class="device-price">{{ device.price | currency }}</p>
       <p
         class="device-category"
-        (click)="navigateToCategory = true; category(device.category)"
+        (click)="navigateToCategory = !navigateToCategory; category(device.category, device.id)"
       >
         #{{ device.category }}
       </p>
