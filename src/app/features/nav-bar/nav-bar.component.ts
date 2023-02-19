@@ -8,7 +8,12 @@ import { Component } from '@angular/core';
 export class NavBarComponent {
   menuOpen: boolean = false;
 
+  constructor() {}
+
   openMenu(): void {
     this.menuOpen = true;
+  }
+
+  openCart() {
   }
 }

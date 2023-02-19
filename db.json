@@ -7,7 +7,7 @@
       "category": "mobiles",
       "price": 900,
       "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14-pro.jpg",
-      "views": 134
+      "views": 145
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "category": "laptops",
       "price": 1000,
       "device_photo": "https://p2-ofp.static.pub/fes/cms/2022/03/30/5bxxp7isu9hgiewncqzuy8fa5uc60q094633.png",
-      "views": 85
+      "views": 92
     },
     {
       "id": 3,
@@ -25,7 +25,7 @@
       "category": "mobiles",
       "price": 850,
       "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-ultra-5g.jpg",
-      "views": 44
+      "views": 46
     },
     {
       "id": 4,
@@ -52,7 +52,7 @@
       "category": "mobiles",
       "price": 550,
       "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-13-pro-black.jpg",
-      "views": 13
+      "views": 14
     },
     {
       "id": 7,
@@ -61,7 +61,7 @@
       "category": "mobiles",
       "price": 620,
       "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-50-pro.jpg",
-      "views": 9
+      "views": 11
     },
     {
       "id": 8,
@@ -80,6 +80,33 @@
       "price": 1120,
       "device_photo": "https://images.acer.com/is/image/acer/Triton-300-PT315-53-Backliton-Black-01a?$Series-Component-XL$",
       "views": 13
+    },
+    {
+      "id": 10,
+      "manufacturer": "Samsung",
+      "model_name": "Galaxy S 23 Ultra",
+      "category": "mobiles",
+      "price": 1100,
+      "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s23-ultra-5g.jpg",
+      "views": 0
+    },
+    {
+      "id": 11,
+      "manufacturer": "Samsung",
+      "model_name": "Galaxy S 20 Ultra",
+      "category": "mobiles",
+      "price": 550,
+      "device_photo": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s20-ultra-10.jpg",
+      "views": 0
+    },
+    {
+      "id": 12,
+      "manufacturer": "Hp",
+      "model_name": "Omen",
+      "category": "laptops",
+      "price": 1600,
+      "device_photo": "https://www.hp.com/us-en/shop/app/assets/images/product/508W4AV_1/center_facing.png?_=1666699642794&imwidth=640&imdensity=1",
+      "views": 1
     }
   ]
 }
