@@ -64,6 +64,20 @@ export class LayoutComponent implements OnInit, OnDestroy {
     }
   }
 
+
+  expand(id: number): void {
+    this.deviceService
+      .getDevice(id)
+      .pipe(
+        tap((data) => {
+          this.deviceService
+            .updateDevice(id, { views: data.views + 1 })
+            .subscribe();
+        })
+      )
+      .subscribe();
+  }
+
   addToCart(id: number): void {
     this.deviceService.getDevice(id).pipe(
       tap(response => {

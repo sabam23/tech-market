@@ -7,7 +7,7 @@
       "category": "mobiles",
       "price": 900,
       "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14-pro.jpg",
-      "views": 152
+      "views": 154
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "category": "laptops",
       "price": 1000,
       "device_photo": "https://p2-ofp.static.pub/fes/cms/2022/03/30/5bxxp7isu9hgiewncqzuy8fa5uc60q094633.png",
-      "views": 98
+      "views": 102
     },
     {
       "id": 3,
@@ -34,7 +34,7 @@
       "category": "mobiles",
       "price": 650,
       "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s21-ultra-5g-.jpg",
-      "views": 26
+      "views": 29
     },
     {
       "id": 5,
@@ -43,7 +43,7 @@
       "category": "laptops",
       "price": 950,
       "device_photo": "https://images.acer.com/is/image/acer/acer-aspire-3-a315-24p-non-fingerprint-non-backlit-wallpaper-silver-01?:Visual-Filter-XL$",
-      "views": 16
+      "views": 118
     },
     {
       "id": 6,
@@ -52,7 +52,7 @@
       "category": "mobiles",
       "price": 550,
       "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-13-pro-black.jpg",
-      "views": 15
+      "views": 23
     },
     {
       "id": 7,
@@ -61,7 +61,7 @@
       "category": "mobiles",
       "price": 620,
       "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-50-pro.jpg",
-      "views": 12
+      "views": 13
     },
     {
       "id": 8,
@@ -70,7 +70,7 @@
       "category": "mobiles",
       "price": 420,
       "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-12-pro.jpg",
-      "views": 8
+      "views": 19
     },
     {
       "id": 9,
@@ -79,7 +79,7 @@
       "category": "laptops",
       "price": 1120,
       "device_photo": "https://images.acer.com/is/image/acer/Triton-300-PT315-53-Backliton-Black-01a?$Series-Component-XL$",
-      "views": 13
+      "views": 24
     },
     {
       "id": 10,
@@ -88,7 +88,7 @@
       "category": "mobiles",
       "price": 1100,
       "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s23-ultra-5g.jpg",
-      "views": 7
+      "views": 205
     },
     {
       "id": 11,
@@ -97,7 +97,7 @@
       "category": "mobiles",
       "price": 550,
       "device_photo": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s20-ultra-10.jpg",
-      "views": 1
+      "views": 27
     },
     {
       "id": 12,
@@ -106,7 +106,7 @@
       "category": "laptops",
       "price": 1600,
       "device_photo": "https://www.hp.com/us-en/shop/app/assets/images/product/508W4AV_1/center_facing.png?_=1666699642794&imwidth=640&imdensity=1",
-      "views": 2
+      "views": 46
     }
   ]
 }

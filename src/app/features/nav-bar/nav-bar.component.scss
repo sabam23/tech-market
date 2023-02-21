@@ -6,9 +6,11 @@
   height: 65px;
   background-color: #ff5000;
   font-family: "Inter", sans-serif;
-  position: relative;
+  position: fixed;
   border-bottom: #ed4e05 solid 2px;
-  margin-bottom: 50px;
+  top: 0%;
+  z-index: 1000;
+  
 
   & > .content {
     height: 100%;

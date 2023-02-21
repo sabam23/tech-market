@@ -21,7 +21,7 @@
       class="device"
       *ngFor="let device of devicesData$ | appFilter : searchText | async"
     >
-      <div class="device-top" (click)="deviceService.deviceId = device.id;" [routerLink]="['/device', device.id]">
+      <div class="device-top" (click)="deviceService.deviceId = device.id; expand(device.id)" [routerLink]="['/device', device.id]">
         <div class="device-views">
           <span class="material-symbols-outlined"> visibility </span>
           {{ device.views }}
