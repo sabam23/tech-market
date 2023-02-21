@@ -7,7 +7,7 @@
       "category": "mobiles",
       "price": 900,
       "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14-pro.jpg",
-      "views": 145
+      "views": 150
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "category": "laptops",
       "price": 1000,
       "device_photo": "https://p2-ofp.static.pub/fes/cms/2022/03/30/5bxxp7isu9hgiewncqzuy8fa5uc60q094633.png",
-      "views": 92
+      "views": 97
     },
     {
       "id": 3,
@@ -25,7 +25,7 @@
       "category": "mobiles",
       "price": 850,
       "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-ultra-5g.jpg",
-      "views": 46
+      "views": 49
     },
     {
       "id": 4,
@@ -34,7 +34,7 @@
       "category": "mobiles",
       "price": 650,
       "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s21-ultra-5g-.jpg",
-      "views": 22
+      "views": 25
     },
     {
       "id": 5,
@@ -52,7 +52,7 @@
       "category": "mobiles",
       "price": 550,
       "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-13-pro-black.jpg",
-      "views": 14
+      "views": 15
     },
     {
       "id": 7,
@@ -61,7 +61,7 @@
       "category": "mobiles",
       "price": 620,
       "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-50-pro.jpg",
-      "views": 11
+      "views": 12
     },
     {
       "id": 8,
@@ -70,7 +70,7 @@
       "category": "mobiles",
       "price": 420,
       "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-12-pro.jpg",
-      "views": 7
+      "views": 8
     },
     {
       "id": 9,
@@ -88,7 +88,7 @@
       "category": "mobiles",
       "price": 1100,
       "device_photo": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s23-ultra-5g.jpg",
-      "views": 0
+      "views": 7
     },
     {
       "id": 11,
@@ -97,7 +97,7 @@
       "category": "mobiles",
       "price": 550,
       "device_photo": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s20-ultra-10.jpg",
-      "views": 0
+      "views": 1
     },
     {
       "id": 12,

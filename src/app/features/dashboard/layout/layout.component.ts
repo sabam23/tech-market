@@ -89,7 +89,10 @@ export class LayoutComponent implements OnInit, OnDestroy {
 
   addToCart(id: number): void {
     this.deviceService.getDevice(id).pipe(
-      tap(response => this.cartService.cartItems.push(response))
+      tap(response => {
+        this.cartService.cartItems.push(response);
+        this.cartService.totalPrice += response.price;
+      })
       ).subscribe();
   }
 }

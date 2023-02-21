@@ -9,4 +9,6 @@ export class CartService {
   constructor() { }
 
   cartItems: Device[] = [];
+
+  totalPrice: number = 0;
 }

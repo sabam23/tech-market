@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CartService } from 'src/app/Shared/services/cart.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -8,7 +9,7 @@ import { Component } from '@angular/core';
 export class NavBarComponent {
   menuOpen: boolean = false;
 
-  constructor() {}
+  constructor(public cartService: CartService) {}
 
   openMenu(): void {
     this.menuOpen = true;
