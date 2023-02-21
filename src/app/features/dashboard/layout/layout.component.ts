@@ -24,7 +24,6 @@ export class LayoutComponent implements OnInit, OnDestroy {
 
   searchText = '';
   selected = '';
-  navigateToCategory: boolean = false;
 
   constructor(public deviceService: DevicesService, private cartService: CartService, public router: Router, private route: ActivatedRoute) {}
 
@@ -63,28 +62,6 @@ export class LayoutComponent implements OnInit, OnDestroy {
         )
         .subscribe();
     }
-  }
-
-  category(category: string, id: number): void {
-    if (this.navigateToCategory) {
-      this.router.navigate(['/', category]);
-    }
-  }
-
-  expand(id: number): void {
-    if (!this.navigateToCategory) {
-      this.router.navigate(['/device', id]);
-      this.deviceService
-        .getDevice(id)
-        .pipe(
-          tap((data) => {
-            this.deviceService
-              .updateDevice(id, { views: data.views + 1 })
-              .subscribe();             
-          })
-        )
-        .subscribe();
-    } 
   }
 
   addToCart(id: number): void {

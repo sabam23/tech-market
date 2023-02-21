@@ -20,29 +20,37 @@
     <div
       class="device"
       *ngFor="let device of devicesData$ | appFilter : searchText | async"
-      (click)="deviceService.deviceId = device.id; expand(device.id)"
     >
-      <div class="device-views">
-        <span class="material-symbols-outlined"> visibility </span>
-        {{ device.views }}
+      <div class="device-top" (click)="deviceService.deviceId = device.id;" [routerLink]="['/device', device.id]">
+        <div class="device-views">
+          <span class="material-symbols-outlined"> visibility </span>
+          {{ device.views }}
+        </div>
+        <img
+          src="{{ device.device_photo }}"
+          alt="device photo"
+          class="device-image"
+        />
+        <h1 class="device-name">
+          {{ device.manufacturer + " " + device.model_name }}
+        </h1>
+        <p class="device-price">{{ device.price | currency }}</p>
       </div>
-      <img
-        src="{{ device.device_photo }}"
-        alt="device photo"
-        class="device-image"
-      />
-      <h1 class="device-name">
-        {{ device.manufacturer + " " + device.model_name }}
-      </h1>
-      <p class="device-price">{{ device.price | currency }}</p>
-      <p
-        class="device-category"
-        (click)="navigateToCategory = !navigateToCategory; category(device.category, device.id)"
-      >
-        #{{ device.category }}
-      </p>
-      <div class="cart" title="add to cart">
-        <span class="material-symbols-outlined" (click)="addToCart(device.id);"> add_shopping_cart </span>
+      <div class="device-bottom">
+        <p
+          class="device-category"
+          [routerLink]="['/', device.category]"
+        >
+          #{{ device.category }}
+        </p>
+        <div class="cart" title="add to cart">
+          <span
+            class="material-symbols-outlined"
+            (click)="addToCart(device.id)"
+          >
+            add_shopping_cart
+          </span>
+        </div>
       </div>
     </div>
   </div>
