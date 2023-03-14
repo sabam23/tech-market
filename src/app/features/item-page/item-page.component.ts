@@ -11,6 +11,7 @@ import { BehaviorSubject, Observable, tap } from 'rxjs';
 })
 export class ItemPageComponent implements OnInit, OnDestroy {
   size = '128';
+  loading: boolean = true;
 
   constructor(
     private deviceService: DevicesService,
@@ -25,10 +26,14 @@ export class ItemPageComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {}
 
-  getDevice(): void {
+  getDevice() {
     this.deviceService
       .getDevice(this.route.snapshot.params['deviceId'])
       .pipe(tap((response) => (this.device = response)))
-      .subscribe();
+      .subscribe(r => {
+        if (r) {
+          this.loading = false;
+        }
+      });
   }
 }

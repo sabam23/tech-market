@@ -1,4 +1,10 @@
-<div class="container">
+<div class="d-flex justify-content-center" *ngIf="loading">
+  <div class="spinner-border" role="status" >
+    <span class="sr-only" id="loading"></span>
+  </div>
+</div>
+
+<div class="container" *ngIf="!loading">
   <div class="device">
     <div class="device-image">
       <img *ngIf="device" src="{{ device.device_photo }}" alt="device img" class="img"/>

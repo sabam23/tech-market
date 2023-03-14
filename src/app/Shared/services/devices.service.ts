@@ -9,7 +9,7 @@ import { Device } from '../../features/dashboard/interfaces/device.interface';
 export class DevicesService {
   constructor(private http: HttpClient) {}
 
-  baseUrl: string = 'http://localhost:3000/devices';
+  baseUrl: string = 'https://my-json-server.typicode.com/sabam23/tech-market/devices';
   deviceId!: number;
 
   getAllDevices(): Observable<Device[]> {
